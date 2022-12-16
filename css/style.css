@@ -1,0 +1,390 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*font-family: 'Cinzel', serif;
+font-family: 'Poppins', sans-serif;*/
+ a{
+ 	text-decoration: none;
+ }
+
+ body{
+ 	overflow-x: hidden;
+ }
+
+ .nav-item{
+ 	margin-left: 20px;
+ 	font-family: 'Poppins', sans-serif;
+ 	text-transform: uppercase;
+ }
+ .nav-link{
+ 	color: black;
+ }
+ .navicon a{
+ 	margin-left: 16px;
+ }
+ .navicon a i{
+     height: 40px;
+     width: 40px;
+     line-height: 40px;
+     text-align: center;
+     border: 1px solid rgba(29, 37, 71, 0.12);
+     color: black;
+     border-radius: 100%;
+ }
+ .cart i{
+ 	width: 70px !important;
+ 	border-radius: 30px !important;
+ 	background-color: #9F78FF;
+ 	color: white !important;
+ 	border: 1px solid #9F78FF !important;
+ 	transition: 0.5s;
+ }
+
+ .cart i:hover{
+    background-color: green;
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+
+ .slick-slider .element{
+  height:100px;
+  width:100px;
+  background-color:#000;
+  color:#fff;
+  border-radius:5px;
+  display:inline-block;
+  margin:0px 10px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-pack:center;
+      -ms-flex-pack:center;
+          justify-content:center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  font-size:20px;
+}
+.slick-slider .slick-disabled {
+  opacity : 0; 
+  pointer-events:none;
+}
+
+
+.banner-content{
+	height: 100vh;
+	width: 100%;
+	text-align: center;
+	background-image: url('../img/hero1.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	background-blend-mode: soft-light;
+}
+
+.align-middle h1{
+	font-family: 'Cinzel', serif;
+	font-size: 125px;
+	font-weight: 700;
+	color: white;
+}
+
+.btn{
+  height: 45px;
+   width: 150px; 
+   background-color:#9F78FF;
+   color: white; 
+   font-size: 20px;
+   border:none;
+    border-radius: 6px; 
+    transition: 0.5s;  
+}
+.btn:hover{
+    background-color: green;
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 0.5s;
+}
+
+/*popular picture css*/
+
+.feature{
+	width: 100%;
+	padding: 100px 80px;
+}
+.popular-item{
+	position: relative;
+	/*margin: 32px;*/
+	overflow: hidden;
+}
+.p-cat{
+	color: white;
+	background: rgba(29,37,71,0.5);;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 8px;
+	transform: translateY(64px);
+	transition: 0.5s;
+}
+.p-shop a{
+	background-color: #9F78FF;
+	color: white;
+	padding: 8px 35px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 6px;
+	position: absolute;
+	top: 43%;
+	left: 18%;
+	transition: 0.5s;
+	opacity: 0;
+}
+.popular-item:hover .p-shop a{
+	transform: translateY(10px);
+	transition: 0.5s;
+	opacity: 1;
+}
+.popular-item:hover .p-cat{
+	transform: translateY(0px);
+	transition: 0.5s;
+}
+
+/*New Arrival css*/
+
+.product-item{
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.product-content{
+	background-color: white;
+	padding: 16px;
+}
+
+.product-content h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+.product-item:hover h4{
+	text-decoration: underline;
+}
+.product-item .pcart{
+	height: 40px;
+	width: 40px;
+	background:#fffffffa;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	border: none;
+	position: absolute;
+	top: 20px;
+	right:20px;
+}
+
+/*collection css*/
+.collection-container{
+	
+	padding: 30px;
+}
+.collection-content{
+	height: 80vh;
+	width: 100%;
+	text-align: center;
+	background-image: url('../img/back.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.2);
+	background-blend-mode: soft-light;
+}
+
+.align-middle h1{
+	font-family: 'Cinzel', serif;
+	font-size: 70px;
+	font-weight: 600;
+	color: white;
+}
+
+.c-btn{
+  height: 45px;
+   width: 150px; 
+   background-color:#9F78FF;
+   color: white; 
+   font-size: 20px;
+   border:none;
+    border-radius: 6px; 
+    transition: 0.5s; 
+    position: relative; 
+    z-index: 9999;
+}
+.c-btn:before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 0;
+	background-color: green;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.c-btn:hover:before{
+   width: 100%;
+    transition: 0.5s;
+}
+
+/*picture section css*/
+
+.sec-2{
+	width: 100%;
+	padding: 10px 86px;
+}
+.s-content{
+	position: relative;
+	overflow: hidden;
+}
+.content{
+	position: absolute;
+	bottom: 150px;
+	left: 50px;
+	
+}
+
+.content h3 a{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 30px;
+}
+.pic a{
+	background-color: #9F78FF;
+	color: white;
+	padding: 8px 35px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	border-radius: 6px;
+	position: absolute;
+	bottom: 20%;
+	left: 9%;
+	transition: 0.5s;
+	opacity: 0;
+}
+
+.s-content:hover .pic a{
+	transform: translateY(10px);
+	transition: 0.5s;
+	opacity: 1;
+	}
+.s-content img{
+     transition: 0.5s;
+}
+.s-content:hover img{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+
+.p-btn{
+  height: 45px;
+   width: 150px; 
+   background-color: white;
+   color:#9F78FF; 
+   font-size: 20px;
+   border:1px solid #9F78FF;
+    border-radius: 6px;
+   margin-left: 40%;
+   margin-bottom: 40px;
+   margin-top: 10px;
+   position: relative;
+   z-index: 9999;
+  
+    }
+
+    .p-btn:before{
+    	 background-color: green;
+          content: '';
+          border-radius: 6px !important;
+          position: absolute;
+
+          height: 100%;
+          width:100%;
+          left: 0;
+          top: 0;
+          transition: 0.5s;
+          z-index: -1;
+    }
+    .p-btn:hover:before{
+    	height: 0;
+    	border-radius: 50% 50% 0 0;
+    	transition: 0.5s;
+    }
+
+/*delivery section*/
+.delivery{
+	width: 100%;
+	background-color: #f7f7fd;
+	padding: 100px 0;
+	margin-top: 40px;
+
+}
+.b-delivery i{
+	font-size: 42px;
+}
+
+/*Footer Css*/
+.footer{
+	width: 100%;
+	padding: 50px 0;
+	background-color: #101068;
+	color: white;
+}
+.f-body h4{
+	margin-left: 30px;
+	font-size: 20px;
+}
+.f-body ul li{
+	list-style: none !important;
+    margin-top: 20px;
+   cursor: pointer;
+   transition: 0.5s;
+   
+}
+
+
+.f-body:hover ul li{
+	text-decoration: underline;
+	color: #9F78FF;
+	transition: 0.5s;
+}
+.foot{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.foot span{
+	color:#9F78FF;
+}
+
+
+
+
+
+
+
+
